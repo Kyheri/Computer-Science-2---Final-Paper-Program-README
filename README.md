@@ -10,10 +10,9 @@ This application allows users to monitor their health status through their devic
      ● provide health recommendations 
 
 # Features
-
-Beginner friendly interface - Lightweight and understandable
-Compliance to Privacy laws 
-Visual representation - Gives data to the user
+ ● Beginner friendly interface - Lightweight and understandable
+ ● Compliance to Privacy laws 
+ ● Visual representation - Gives data to the user
 
 ## Main Features
  ● Health data analysis
@@ -41,11 +40,11 @@ Visual representation - Gives data to the user
 
 # Installation
 ## Mobile Device
- ● Download Pydroid 3.0 in the play store or App store
- ● Download the executable-file program here   →( https://github.com/Kyheri/Computer-Science-2---Final-Paper-Program-README)
- ● Open Pydroid 3.0
- ● Follow installation instructions 
- ● Open the program by clicking the “Open” option and then selecting the program.
+● Download Pydroid 3.0 in the play store or App store
+● Download the executable-file program here   →( https://github.com/Kyheri/Computer-Science-2---Final-Paper-Program-README)
+● Open Pydroid 3.0
+● Follow installation instructions
+● Open the program by clicking the “Open” option and then selecting the program.
 
 ## Windows / Mac
  ● Download Python here →(https://www.python.org/downloads/)
@@ -93,7 +92,7 @@ After that the user will be taken back to the menu to choose between the options
 # Programming Language/s Used
  ● Python
 
-#Contributors
+# Contributors
 Barrion, Rhyziel - Programmer
 Coliyat, Lheam - Programmer
 Leona, Hannah - Programmer
