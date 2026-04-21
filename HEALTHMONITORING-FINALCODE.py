@@ -1,22 +1,6 @@
 #CS Quarter 3 project
 
 #User Defined Function/s
-
-#For ??? results
-def get_reference_gfr(age):
-    if 18 <= age <= 29:
-        return 116
-    elif 30 <= age <= 39:
-        return 107
-    elif 40 <= age <= 49:
-        return 99
-    elif 50 <= age <= 59:
-        return 93
-    elif 60 <= age <= 69:
-        return 85
-    else:
-        return 75
-
 #For CBC results
 def check_range(value, low, high):
     if value < low:
