@@ -521,6 +521,14 @@ Note: If you have a high WBC, then there's a likely chance you have an infection
 Note: If you have a low Hemoglobin and an abnormal MCV, this can indicate nutrional defficiency.
 Note: If all RBC, Hemoglobin, and Hematocrit are low, it can indicate anemia, defficiency, or chronic diseases.
                         """)
+                    else:
+                        print("""
+as of now, you don't have to consult, but please be aware of the following:
+Note: If all RBC, WBC, and platelets are low, then there is a likely chance that you have a bone marrow problem.
+Note: If you have a high WBC, then there's a likely chance you have an infection or imflammation.
+Note: If you have a low Hemoglobin and an abnormal MCV, this can indicate nutrional defficiency.
+Note: If all RBC, Hemoglobin, and Hematocrit are low, it can indicate anemia, defficiency, or chronic diseases.
+                        """)
                        
                     continue
 
