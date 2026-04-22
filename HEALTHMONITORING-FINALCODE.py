@@ -799,7 +799,6 @@ Note: If all RBC, Hemoglobin, and Hematocrit are low, it can indicate anemia, de
                     continue
                 
                 case _ if (response_1) == '7':
-                    case _ if (response_1) == '7':
                     print("""=====Kidney Functions=====""")
 
                     while True:
