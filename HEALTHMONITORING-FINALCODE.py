@@ -368,8 +368,6 @@ Thank you for using our service, before you start you first have to enter basic 
                 print("Invalid input, try again.")
                 continue
 
-        illness=input("Current illnesses or diseases: ")
-
         #Main interface of the program, has several analyzers for the user.
         while True:
             response_1 = input("""
@@ -408,16 +406,24 @@ What type of food did you eat most recently?""")
                     """)
                     food = input("Enter the type of food: ").lower()
 
-                    # Determine glucose category
-                    if glucose < 70:
-                        status = "Low blood sugar (Hypoglycemia)"
-                    elif 70 <= glucose <= 99:
-                        status = "Normal"
-                    elif 100 <= glucose <= 125:
-                        status = "Slightly high (Prediabetes range)"
-                    else:
-                        status = "High blood sugar (Possible Diabetes)"
+                    while True:
 
+                    # Determine glucose category
+                        if glucose <= 0:
+                           print("Invalid value, try again.")
+                           continue
+                        elif glucose < 70:
+                           status = "Low blood sugar (Hypoglycemia)"
+                        elif 70 <= glucose <= 99:
+                           status = "Normal"
+                        elif 100 <= glucose <= 125:
+                           status = "Slightly high (Prediabetes range)"
+                        else:
+                           status = "High blood sugar (Possible Diabetes)"
+
+                        break
+        
+                    
                     # Explain effect of food
                     if food == "sugary":
                         food_effect = "Sugary foods can cause a rapid spike in blood glucose levels."
