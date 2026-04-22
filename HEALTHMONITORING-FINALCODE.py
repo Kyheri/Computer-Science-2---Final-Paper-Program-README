@@ -384,8 +384,6 @@ Thank you for using our service, before you start you first have to enter basic 
 
 Response: """)
             
-            #Numbers 1,2,3,4,5,6 are yet to be done.
-            #Some programs yet to implement the consideration of gender and illnesses.
             match response_1 == "1":
                 case _ if (response_1) == '1':
                     print("""
@@ -410,8 +408,7 @@ What type of food did you eat most recently?""")
 
                     # Determine glucose category
                         if glucose <= 0:
-                           print("Invalid value, try again.")
-                           continue
+                           print("Invalid value was entered, no conclusion made.")
                         elif glucose < 70:
                            status = "Low blood sugar (Hypoglycemia)"
                         elif 70 <= glucose <= 99:
