@@ -791,46 +791,53 @@ Note: If all RBC, Hemoglobin, and Hematocrit are low, it can indicate anemia, de
                     continue
                 
                 case _ if (response_1) == '7':
+                    case _ if (response_1) == '7':
                     print("""=====Kidney Functions=====""")
-    
+
                     while True:
                         try:
                             gfr = float(input("Enter your GFR (mL/min/1.73 m²): "))
                             if gfr <= 0 or gfr > 200:
-                                print("Please Enter a realistic GFR value (1–200).")
+                                print("Please enter a realistic GFR value (1–200).")
                                 continue
                             break
                         except ValueError:
                             print("Numeric value only. Try again.")
-                
-                    reference = get_reference_gfr(age)
-                
+
+                    # Get reference range
+                    low, high = get_reference_gfr(age)
+
                     print("""
-                ======KIDNEY FUNCTIONS RESULTS======
+======KIDNEY FUNCTIONS RESULTS======
                     """)
                     print("Your GFR:", gfr)
-                    print("Reference GFR for your age:", reference)
-                
-                    if gfr >= reference:
-                        print("\nResult: The result of the test is normal")
+                    print(f"Reference GFR for your age: {low} - {high}")
+
+                    # Correct comparison
+                    if low <= gfr <= high:
+                        print("\nResult: Normal")
                         print("Your kidney filtration rate is within the expected range.")
                     else:
-                        print("\nResult: The result of the test is not normal")
-                        print("Your GFR is below the expected rate.")
-                
+                        print("\nResult: Not Normal")
+
+                        if gfr < low:
+                            print("Your GFR is LOWER than expected.")
+                        else:
+                            print("Your GFR is HIGHER than expected.")
+
                         print("\nPossible Causes:")
                         print("- Dehydration")
                         print("- Diabetes")
                         print("- High blood pressure")
                         print("- Kidney disease")
-                
+
                         print("\nTips to Improve Kidney Health:")
                         print("- Drink enough water")
                         print("- Maintain a healthy diet")
                         print("- Control blood sugar and blood pressure")
                         print("- Exercise regularly")
                         print("- Consult a doctor if symptoms persist")
-                
+
                     continue
 
 
