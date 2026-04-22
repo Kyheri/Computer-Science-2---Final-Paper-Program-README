@@ -288,20 +288,20 @@ def safe_string(prompt, valid_choices, default=None):
         print(f"Invalid input. Defaulting to '{default}'.")
         return default
 
-#For kidney functions test results
+#For GFR KIDNEY 
 def get_reference_gfr(age):
     if 18 <= age <= 29:
-        return 116
+        return (90, 120)
     elif 30 <= age <= 39:
-        return 107
+        return (85, 110)
     elif 40 <= age <= 49:
-        return 99
+        return (80, 105)
     elif 50 <= age <= 59:
-        return 93
+        return (75, 100)
     elif 60 <= age <= 69:
-        return 85
+        return (70, 95)
     else:
-        return 75
+        return (60, 90)
 
 print("Before accessing our program, please read the TOS (Terms of Service) of our program.")
 #Terms of Service of our program
